@@ -1,0 +1,13 @@
+.review-text {
+    max-height: 4.5rem; /* Control the height based on your design */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    transition: max-height 0.3s ease, white-space 0.3s ease;
+}
+
+.review-text.expanded {
+    max-height: none;
+    white-space: normal;
+}

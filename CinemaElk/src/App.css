@@ -1,0 +1,40 @@
+div::-webkit-scrollbar {
+  display: none;
+}
+.fixed{
+  position: fixed;  
+    top: 0;          
+    bottom: 0;         
+    left: 0;          
+    width: 10rem;   
+    /* background-color: #333;   */
+    color: white;    
+    padding: 20px;     
+    overflow-y: auto;  
+    z-index: 1000;  
+    margin-top: 3rem;  
+}
+
+.fixed img {
+  width: 3rem;
+  margin: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 40%;
+  background-color: #5271ff; /* This will not affect the image, it's a placeholder */
+  padding: 5px;
+  transition: filter 0.3s; /* Smooth transition */
+}
+
+.fixed2{
+  position: sticky;  
+  top: 0;          
+  bottom: 0;         
+  left: 0;   
+  overflow-y: auto;  
+  z-index: 1000;  
+  width: 98.9vw;     
+}
+.fixed img:hover {
+  filter: brightness(1) sepia(1) hue-rotate(180deg); /* Adjust filter as needed */
+}
